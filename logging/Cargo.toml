@@ -1,0 +1,13 @@
+[package]
+name = "logging"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+log = "0.4.25"
+env_logger = "0.11.6"
+time = { version = "0.3.37", features = ["formatting"] }
+
+[[bin]]
+name = "simple_logger"
+path = "src/simple_logger.rs"
