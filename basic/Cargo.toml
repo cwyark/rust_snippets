@@ -24,3 +24,7 @@ path = "src/panic.rs"
 [[bin]]
 name = "struct"
 path = "src/struct.rs"
+
+[[bin]]
+name = "enum"
+path = "src/enum.rs"
