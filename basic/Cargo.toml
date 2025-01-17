@@ -16,3 +16,11 @@ path = "src/reference.rs"
 [[bin]]
 name = "slice"
 path = "src/slice.rs"
+
+[[bin]]
+name = "panic"
+path = "src/panic.rs"
+
+[[bin]]
+name = "struct"
+path = "src/struct.rs"
