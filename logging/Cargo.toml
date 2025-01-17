@@ -6,8 +6,12 @@ edition = "2021"
 [dependencies]
 log = "0.4.25"
 env_logger = "0.11.6"
-time = { version = "0.3.37", features = ["formatting"] }
+chrono = "0.4.39"
 
 [[bin]]
 name = "simple_logger"
 path = "src/simple_logger.rs"
+
+[[bin]]
+name = "format_logger"
+path = "src/format_logger.rs"
