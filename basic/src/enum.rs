@@ -24,6 +24,12 @@ impl Velocity {
     }
 }
 
+#[derive(Debug)]
+enum NumberOrNothing {
+    Number(i32),
+    Nothing,
+}
+
 fn main() {
     let velocity = Velocity {
         direction: Direction::Up,
@@ -32,4 +38,5 @@ fn main() {
     println!("direction is {:?}", velocity.direction);
     println!("speed is {:?}", velocity.speed);
     velocity.call_func();
+    println!("nothing : {:?}", NumberOrNothing::Nothing);
 }

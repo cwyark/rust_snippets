@@ -28,3 +28,7 @@ path = "src/struct.rs"
 [[bin]]
 name = "enum"
 path = "src/enum.rs"
+
+[[bin]]
+name = "traits"
+path = "src/traits.rs"
