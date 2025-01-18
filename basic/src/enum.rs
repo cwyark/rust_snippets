@@ -8,14 +8,20 @@ enum Direction {
 
 #[derive(Debug)]
 enum Speed {
-    Slow = 10,
     Medium = 20,
+    Slow = 10,
     Fast = 30,
 }
 
 struct Velocity {
     direction: Direction,
     speed: Speed,
+}
+
+impl Velocity {
+    fn call_func(&self) {
+        println!("calc_vel");
+    }
 }
 
 fn main() {
@@ -25,4 +31,5 @@ fn main() {
     };
     println!("direction is {:?}", velocity.direction);
     println!("speed is {:?}", velocity.speed);
+    velocity.call_func();
 }
