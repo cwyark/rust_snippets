@@ -32,6 +32,15 @@ impl Ride for Bike {
     }
 }
 
+// argument &dyn Ride means any value that implement the Ride trait
+fn move_forward(vehicle: &dyn Ride) {
+    vehicle.forward();
+}
+
+// argument &dyn Ride means any value that implement the Ride trait
+fn move_backward(vehicle: &dyn Ride) {
+    vehicle.backward();
+}
 fn main() {
     let bike = Bike {
         brand: "bike".to_string(),
@@ -41,9 +50,9 @@ fn main() {
         brand: "car".to_string(),
     };
 
-    bike.forward();
-    bike.backward();
+    move_forward(&bike);
+    move_forward(&car);
 
-    car.forward();
-    car.backward();
+    move_backward(&bike);
+    move_backward(&car);
 }
