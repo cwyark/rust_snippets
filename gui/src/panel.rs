@@ -21,13 +21,35 @@ impl MyApp {
 }
 
 impl eframe::App for MyApp {
+    // create a top panel
     fn update(&mut self, ctx: &egui::Context, frame: &mut eframe::Frame) {
         egui::TopBottomPanel::top("top").show(ctx, |ui| {
+            egui::menu::bar(ui, |ui| {
+                ui.menu_button("File", |ui| {
+                    if ui.button("Quit").clicked() {
+                        self.value += 1.0
+                    }
+                });
+
+                ui.menu_button("Actions", |ui| {
+                    if ui.button("Update").clicked() {
+                        self.value -= 1.0;
+                    }
+                });
+                egui::widgets::global_theme_preference_buttons(ui);
+            });
+        });
+
+        egui::TopBottomPanel::bottom("bottom").show(ctx, |ui| {
+            ui.heading("bottom !");
             egui::menu::bar(ui, |ui| {
                 egui::widgets::global_theme_preference_buttons(ui);
             });
         });
 
+        egui::SidePanel::left("left").show(ctx, |ui| {
+            ui.heading("this is side bar!");
+        });
         egui::CentralPanel::default().show(ctx, |ui| {
             ui.heading("panel example");
             ui.horizontal(|ui| {
