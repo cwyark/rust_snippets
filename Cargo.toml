@@ -1,2 +1,2 @@
 [workspace]
-members = ["basic", "collection", "logging", "memory"]
+members = ["basic", "collection", "gui", "logging", "memory"]

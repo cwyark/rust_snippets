@@ -1,0 +1,15 @@
+[package]
+name = "gui"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+eframe = { version = "0.30" }
+
+[[bin]]
+name = "simple_epaint"
+path = "src/simple_epaint.rs"
+
+[[bin]]
+name = "panel"
+path = "src/panel.rs"
