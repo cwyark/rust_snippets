@@ -1,0 +1,10 @@
+[package]
+name = "datastructure"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[[bin]]
+name = "graph"
+path = "src/graph.rs"
