@@ -13,6 +13,12 @@ struct Point<T> {
     y: T,
 }
 
+impl<T> Point<T> {
+    fn get_x(&self) -> &T {
+        &self.x
+    }
+}
+
 #[derive(Debug)]
 enum Color<T> {
     black(T),
@@ -26,6 +32,8 @@ fn main() {
     let b = find_largest(&vec!["a", "b", "c", "d"]);
     println!("b is {}", b);
     let point_a = Point { x: 10, y: 12 };
+    let point_b = point_a.get_x();
+    println!("get_x is {}", point_b);
     println!("point_a.x is {}", point_a.x);
     let color_black = Color::black(10);
     println!("color black is {:?}", Color::black(10));
