@@ -8,3 +8,7 @@ edition = "2021"
 [[bin]]
 name = "vector"
 path = "src/vector.rs"
+
+[[bin]]
+name = "hashmap"
+path = "src/hashmap.rs"

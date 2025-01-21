@@ -32,3 +32,7 @@ path = "src/enum.rs"
 [[bin]]
 name = "traits"
 path = "src/traits.rs"
+
+[[bin]]
+name = "generic_type"
+path = "src/generic_type.rs"
