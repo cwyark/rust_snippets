@@ -32,6 +32,12 @@ impl Ride for Bike {
     }
 }
 
+// trait bounds example
+
+fn go<T: Ride>(action: T) {
+    action.forward();
+}
+
 // argument &dyn Ride means any value that implement the Ride trait
 fn move_forward(vehicle: &dyn Ride) {
     vehicle.forward();
@@ -55,4 +61,7 @@ fn main() {
 
     move_backward(&bike);
     move_backward(&car);
+
+    println!("trait bound example:");
+    go(bike);
 }
