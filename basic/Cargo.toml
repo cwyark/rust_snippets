@@ -36,3 +36,7 @@ path = "src/traits.rs"
 [[bin]]
 name = "generic_type"
 path = "src/generic_type.rs"
+
+[[bin]]
+name = "lifetime"
+path = "src/lifetime.rs"
