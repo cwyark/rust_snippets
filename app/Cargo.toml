@@ -1,0 +1,13 @@
+[package]
+name = "app"
+version = "0.1.0"
+edition = "2021"
+
+
+[dependencies]
+clap = { version = "*", features = ["derive"] }
+colored = { version = "3.0.0" }
+
+[[bin]]
+name = "cli"
+path = "src/cli.rs"
