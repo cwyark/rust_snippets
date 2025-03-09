@@ -10,6 +10,10 @@ fn change_str(s: &mut String) {
 fn main() {
     let mut s = String::from("hello world");
     let length = calculate_len(&s);
+    {
+        let r = &s;
+        println!("r is {}", r);
+    }
     println!("s size is {}", length);
     println!("s is {}", s);
     change_str(&mut s);

@@ -6,6 +6,10 @@ edition = "2021"
 [dependencies]
 
 [[bin]]
+name = "variable"
+path = "src/variable.rs"
+
+[[bin]]
 name = "ownership"
 path = "src/ownership.rs"
 
