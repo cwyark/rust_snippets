@@ -1,5 +1,12 @@
 fn main() {
-    let v: Vec<i32> = Vec::new();
-    let v2 = vec![1, 2, 3];
-    println!("v2 is {:?}", v2);
+    let v = vec![0, 3, 8, 4, 7];
+    // iter through v
+    for i in &v {
+        println!("i is {}", i);
+    }
+
+    // iter through the vector as well, but use .iter()
+    for i in v.iter() {
+        println!("i is {}", i);
+    }
 }
