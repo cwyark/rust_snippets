@@ -6,15 +6,3 @@ edition = "2021"
 [dependencies]
 eframe = { version = "0.30" }
 egui_extras = { version = "0.30" }
-
-[[bin]]
-name = "click_and_drag"
-path = "src/click_and_drag.rs"
-
-[[bin]]
-name = "panel"
-path = "src/panel.rs"
-
-[[bin]]
-name = "node_graph"
-path = "src/node_graph.rs"

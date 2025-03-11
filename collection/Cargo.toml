@@ -4,11 +4,3 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-
-[[bin]]
-name = "vector"
-path = "src/vector.rs"
-
-[[bin]]
-name = "hashmap"
-path = "src/hashmap.rs"
