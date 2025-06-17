@@ -1,6 +1,7 @@
 [workspace]
 members = [
   "basic",
+  "async",
   "collection",
   "datastructure",
   "gui",

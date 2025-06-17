@@ -1,4 +1,5 @@
-// Write a function in Rust called add_numbers that takes two integer parameters and returns their sum
+// Write a function in Rust called add_numbers that takes
+// two integer parameters and returns their sum.
 fn add_numbers(a: u32, b: u32) -> u64 {
     (a + b).into()
 }
