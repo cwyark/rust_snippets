@@ -14,5 +14,5 @@ fn main() {
             max = *i;
         }
     }
-    println!("max number of the array is {}", max);
+    println!("max number of the array is {max}");
 }

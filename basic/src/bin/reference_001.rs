@@ -16,5 +16,5 @@ fn calculate_average(numbers: &[i32]) -> f64 {
 fn main() {
     let v = [0, 4, 6, 5, 7];
     let avg = calculate_average(&v);
-    println!("v is {}", avg)
+    println!("v is {avg}");
 }

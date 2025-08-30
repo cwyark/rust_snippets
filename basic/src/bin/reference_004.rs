@@ -12,10 +12,10 @@ fn main() {
     let length = calculate_len(&s);
     {
         let r = &s;
-        println!("r is {}", r);
+        println!("r is {r}");
     }
-    println!("s size is {}", length);
-    println!("s is {}", s);
+    println!("s size is {length}");
+    println!("s is {s}");
     change_str(&mut s);
-    println!("modified s is {}", s);
+    println!("modified s is {s}");
 }

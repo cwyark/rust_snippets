@@ -19,5 +19,5 @@ fn first_word(s: &str) -> &str {
 fn main() {
     let s = "hello world";
     let w = first_word(s);
-    println!("first word is {}", w);
+    println!("first word is {w}");
 }

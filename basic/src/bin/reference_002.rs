@@ -13,5 +13,5 @@ fn main() {
     let mut a = 10;
     let mut b = 20;
     swap(&mut a, &mut b);
-    println!("now a is {} and b is {}", a, b);
+    println!("now a is {a} and b is {b}");
 }
