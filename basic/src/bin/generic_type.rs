@@ -28,12 +28,12 @@ enum Color<T> {
 
 fn main() {
     let a = find_largest(&vec![0, 2, 4, 5]);
-    println!("a is {}", a);
+    println!("a is {a}");
     let b = find_largest(&vec!["a", "b", "c", "d"]);
-    println!("b is {}", b);
+    println!("b is {b}");
     let point_a = Point { x: 10, y: 12 };
     let point_b = point_a.get_x();
-    println!("get_x is {}", point_b);
+    println!("get_x is {point_b}");
     println!("point_a.x is {}", point_a.x);
     let color_black = Color::black(10);
     println!("color black is {:?}", Color::black(10));

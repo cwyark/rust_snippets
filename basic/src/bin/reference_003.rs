@@ -12,5 +12,5 @@ fn main() {
     let mut s = String::from("world");
     let suffix = "hello ";
     append_suffix(&mut s, suffix);
-    println!("message is {}", s);
+    println!("message is {s}");
 }

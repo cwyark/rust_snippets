@@ -23,5 +23,5 @@ fn in_place_reverse(v: &mut Vec<i32>) -> &Vec<i32> {
 fn main() {
     let mut v = vec![0, 6, 4, 5, 9];
     let reversed = in_place_reverse(&mut v);
-    println!("v is {:?}", reversed);
+    println!("v is {reversed:?}");
 }

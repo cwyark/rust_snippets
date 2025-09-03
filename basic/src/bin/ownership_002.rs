@@ -9,5 +9,5 @@ fn modified_string(s: &mut String) {
 fn main() {
     let mut s = String::from("hello ");
     modified_string(&mut s);
-    println!("string is {}", s);
+    println!("string is {s}");
 }

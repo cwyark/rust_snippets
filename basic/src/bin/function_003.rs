@@ -11,5 +11,5 @@ where
 
 fn main() {
     let result = apply(|x| x * 2, 5);
-    println!("result: {}", result);
+    println!("result: {result}");
 }
