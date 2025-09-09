@@ -1,4 +1,4 @@
 fn main() {
     let b = Box::new(5);
-    println!("b is {}", b);
+    println!("b is {b}");
 }
