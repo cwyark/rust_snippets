@@ -1,10 +1,21 @@
-use clap::Parser;
+use clap::{Parser, Subcommand};
 use colored::Colorize;
+use std::path::PathBuf;
 
 #[derive(Parser)]
 struct Options {
-    #[clap(default_value = "hello!")]
     message: String,
+
+    config: Option<PathBuf>,
+
+    #[command(subcommand)]
+    command: Commands,
+}
+
+#[derive(Subcommand)]
+enum Commands {
+    /// Add files to this app
+    Add { name: Option<String> },
 }
 
 fn main() {
