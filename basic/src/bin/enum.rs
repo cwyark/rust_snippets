@@ -2,11 +2,13 @@
 enum Direction {
     Up,
     Down,
+    #[allow(dead_code)]
     Right,
     Left,
 }
 
 #[derive(Debug)]
+#[allow(dead_code)]
 enum Speed {
     Medium = 20,
     Slow = 10,
@@ -25,6 +27,7 @@ impl Velocity {
 }
 
 #[derive(Debug)]
+#[allow(dead_code)]
 enum NumberOrNothing {
     Number(i32),
     Nothing,

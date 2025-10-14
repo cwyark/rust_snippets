@@ -8,6 +8,7 @@ fn find_largest<T: PartialOrd + Copy>(arr: &[T]) -> T {
     largest
 }
 
+#[allow(dead_code)]
 struct Point<T> {
     x: T,
     y: T,
@@ -20,6 +21,7 @@ impl<T> Point<T> {
 }
 
 #[derive(Debug)]
+#[allow(dead_code)]
 enum Color<T> {
     black(T),
     red(T),
